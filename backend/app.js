@@ -54,7 +54,8 @@ const express = require("express");
 
 
  const corsOptions = {
-  origin: ['https://moviesreviewapplications.onrender.com'], // Your frontend URL
+  origin: ['http://localhost:3000', 'https://moviesreviewapplications.onrender.com'],
+ // Your frontend URL
   credentials: true, // Allow cookies or session credentials
 };
  app.use(cors(corsOptions));
