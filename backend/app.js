@@ -10,7 +10,7 @@ const express = require("express");
  const cors = require("cors");
  const jwt = require("jsonwebtoken");
  const bcryptjs = require("bcryptjs");
- const mongoURL = 'mongodb://127.0.0.1:27017/moiveslist';
+ const mongoURL = 'mongodb+srv://chettukindavittalreddy123:PUJQK20xVWclABj8@cluster0.toj5ydf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
  async function ConnectDb() {
    try {
      await mongoose.connect(mongoURL);
