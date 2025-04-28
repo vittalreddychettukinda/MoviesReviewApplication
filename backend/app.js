@@ -12,13 +12,13 @@ const express = require("express");
  const bcryptjs = require("bcryptjs");
  const mongoURL = 'mongodb+srv://chettukindavittalreddy123:PUJQK20xVWclABj8@cluster0.toj5ydf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
  async function ConnectDb() {
-   try {
-     await mongoose.connect(mongoURL);
-     console.log("Connected successfully");
-   } catch (err) {
-     console.log("Error while connecting to DB", err);
-   }
- }
+  try {
+    await mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log("Connected to MongoDB successfully");
+  } catch (err) {
+    console.log("Error while connecting to DB:", err);
+  }
+}
  
  ConnectDb();
  
