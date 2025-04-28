@@ -1,6 +1,6 @@
 
 import React from "react";
- export const ApiUrl = "http://localhost:3000";  
+ export const ApiUrl = "https://moviesreview-nn3f.onrender.com";  
  export function Auth() {
      return (
        <div>
