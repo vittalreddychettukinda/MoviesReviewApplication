@@ -51,11 +51,12 @@ const express = require("express");
      res.status(401).json({ message: "Invalid Token" });
    }
  };
- 
+
+
  const corsOptions = {
-   origin: ['http://localhost:3000', 'http://localhost:3001'],
-   credentials: true,
- };
+  origin: ['https://moviesreviewapplications.onrender.com'], // Your frontend URL
+  credentials: true, // Allow cookies or session credentials
+};
  app.use(cors(corsOptions));
  app.use(express.urlencoded({ extended: true }));
  app.use(express.json());
